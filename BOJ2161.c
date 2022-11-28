@@ -42,7 +42,7 @@ Node* insertLast(Node* head, element data)
 Node* changeCard(Node* head)
 {
 	Node* removed = head->next;
-  head->next = removed->next;
+  	head->next = removed->next;
 	printf("%d ", removed->data);
 	free(removed);
 	return head->next;
